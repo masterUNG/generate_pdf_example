@@ -10,7 +10,7 @@ class PdfParagraphApi {
     final pdf = Document();
 
     final customFont =
-        Font.ttf(await rootBundle.load('assets/OpenSans-Regular.ttf'));
+        Font.ttf(await rootBundle.load('assets/Sarabun-Regular.ttf'));
 
     pdf.addPage(
       MultiPage(
@@ -25,7 +25,7 @@ class PdfParagraphApi {
           buildCustomHeadline(),
           buildLink(),
           ...buildBulletPoints(),
-          Header(child: Text('My Headline')),
+          Header(child: Text('My Headline MasterUNG')),
           Paragraph(text: LoremText().paragraph(60)),
           Paragraph(text: LoremText().paragraph(60)),
           Paragraph(text: LoremText().paragraph(60)),
@@ -59,7 +59,7 @@ class PdfParagraphApi {
             PdfLogo(),
             SizedBox(width: 0.5 * PdfPageFormat.cm),
             Text(
-              'Create Your PDF',
+              'Create Your PDF masterUNG',
               style: TextStyle(fontSize: 20, color: PdfColors.blue),
             ),
           ],
